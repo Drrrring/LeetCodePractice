@@ -3,4 +3,4 @@ project(LeetCodePractice)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(LeetCodePractice Easy/190.cpp)
+add_executable(LeetCodePractice Easy/191.cpp)
