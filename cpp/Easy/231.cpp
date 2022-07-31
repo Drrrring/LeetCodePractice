@@ -22,6 +22,7 @@ public:
     }
 
     //另一种解法： 若 n & (n-1) == 0，则n为2的幂
+    //因为当且仅当 n只有最高位为1时，n为2的幂
     bool isPower(int n) {
         return !(n & (n - 1));
     }
