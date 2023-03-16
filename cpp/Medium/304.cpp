@@ -15,19 +15,20 @@
 using namespace std;
 class NumMatrix {
 public:
-    vector<vector<int>>* pm;
+    vector<vector<int>> m;
     NumMatrix(vector<vector<int>>& matrix) {
-        int length = matrix.size();
-        pm = new vector<vector<int>>(length);
-        auto m = *pm;
-        for (int i = 0; i < length; ++i) {
-            m[i].assign(matrix[i].begin(), matrix[i].end());
-        }
+//        int length = matrix.size();
+//        pm = new vector<vector<int>>(length);
+//        auto m = *pm;
+//        for (int i = 0; i < length; ++i) {
+//            m[i].assign(matrix[i].begin(), matrix[i].end());
+//        }
+        m = matrix;
     }
 
     int sumRegion(int row1, int col1, int row2, int col2) {
         int sum = 0;
-        auto m = *pm;
+//        auto m = *pm;
         if(row1 < 0 || col1 < 0 || row2 >= m.size() || col2 >= m[0].size()) return 0;
         for(int i = row1; i <= row2; ++i) {
             for(int j = col1; j <= col2; ++j) {
