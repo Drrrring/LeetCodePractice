@@ -7,29 +7,6 @@ package Medium;
  * 你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
  */
 public class M2 {
-}
-
-/**
- * Definition for singly-linked list.
- */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode resList = new ListNode(0);
         ListNode pres = resList;
@@ -92,5 +69,25 @@ class Solution {
             pres.next = null;
         }
         return resList;
+    }
+}
+
+/**
+ * Definition for singly-linked list.
+ */
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 }
